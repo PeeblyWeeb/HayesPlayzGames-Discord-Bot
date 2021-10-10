@@ -129,8 +129,8 @@ async def ultradrip(ctx):
 @bot.command(pass_context=True)
 async def peeblychan(ctx):
   messagedel = await ctx.reply('Please wait... file uploading...')
-  await ctx.reply(text='shh, heres peebly saying onii-chan out of context..', file=discord.File(r'peebly-chan.mp3'))
-  message.delete(messagedel)
+  await ctx.send(file=discord.File(r'peebly-chan.mp3'))
+  ctx.delete(messagedel)
 
 
 # Log into the bot and keep bot online
